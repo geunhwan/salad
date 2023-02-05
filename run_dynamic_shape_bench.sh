@@ -8,12 +8,31 @@ bert_base_path='/home/geunhwan/work/model/bert-base-uncased/onnx/onnx/FP16/1/dld
 bert_large_path='/home/geunhwan/work/model/bert-large-uncased-whole-word-masking-squad-0001/onnx/onnx/FP16/1/dldt/bert-large-uncased-whole-word-masking-squad-0001.xml'
 date=`date +%y%m%d_%H%M%S`
 
+usage() {
+    echo "Following variables can be set."
+    echo ""
+    echo "OPENVINO_PATH: $openvino_path"
+    echo "BERT_SMALL_PATH: $bert_small_path"
+    echo "BERT_BASE_PATH: $bert_base_path"
+    echo "BERT_LARGE_PATH: $bert_large_path"
+    echo ""
+    echo "cache path: $cache_path"
+    echo "report path: $report_path/YYMMDD_HHMMSS"
+
+    exit 0
+}
+
+while getopts h opts; do
+    case $opts in
+        h) usage
+            ;;
+        ?) usage
+            ;;
+    esac
+done
+
 report_path=${report_path}/${date}
 mkdir -p $report_path
-
-if [[ ! -z "$CACHE_PATH" ]]; then
-    cl_cache_path=$CACHE_PATH
-fi
 
 if [[ ! -d $cache_path ]]; then
     mkdir -p $cache_path
@@ -21,6 +40,18 @@ fi
 
 if [[ ! -z "$OPENVINO_PATH" ]]; then
     openvino_path=$OPENVINO_PATH
+fi
+
+if [[ ! -z "$BERT_SMALL_PATH" ]]; then
+    bert_small_path = $BERT_SMALL_PATH
+fi
+
+if [[ ! -z "$BERT_BASE_PATH" ]]; then
+    bert_base_path = $BERT_BASE_PATH
+fi
+
+if [[ ! -z "$BERT_LARGE_PATH" ]]; then
+    bert_large_path = $BERT_LARGE_PATH
 fi
 
 run_model() {
