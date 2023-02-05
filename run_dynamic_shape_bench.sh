@@ -1,7 +1,7 @@
 #!/bin/bash
 
 openvino_path='/home/geunhwan/work/repo/openvino-fork/bin/intel64/RelWithDebInfo'
-report_path='./_report'
+report_path='./dynamic_shape_report'
 cache_path='./_cache'
 bert_small_path='/home/geunhwan/work/model/bert-small-uncased-whole-word-masking-squad-0001/onnx/onnx/FP16/1/dldt/bert-small-uncased-whole-word-masking-squad-0001.xml'
 bert_base_path='/home/geunhwan/work/model/bert-base-uncased/onnx/onnx/FP16/1/dldt/bert-base-uncased.xml'
