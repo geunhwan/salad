@@ -1,0 +1,156 @@
+GPU.0 FP16 bert-base-ner: 40.57fps
+GPU.0 FP16 bert-base-uncased-cola: 40.87fps
+GPU.0 FP16 bert-base-uncased-mrpc: 40.58fps
+GPU.0 FP16 bert-base-uncased-qqp: 41.43fps
+GPU.0 FP16 bert-base-uncased-sst2: 40.37fps
+GPU.0 FP16 bert-large-uncased-whole-word-masking-squad-0001: 4.57fps
+GPU.0 FP16 bert-large-uncased-whole-word-masking-squad-emb-0001: 26.91fps
+GPU.0 FP16 bert-small-uncased-whole-word-masking-squad-0002: 33.80fps
+GPU.0 FP16 bert-small-uncased-whole-word-masking-squad-emb-int8-0001: 118.65fps
+GPU.0 FP16 bert-small-uncased-whole-word-masking-squad-int8-0002: 34.41fps
+GPU.0 FP16 distilbert-base-uncased-cola: 62.12fps
+GPU.0 FP16 distilbert-base-uncased-mrpc: 62.24fps
+GPU.0 FP16 electra-base-cola: 40.17fps
+GPU.0 FP16 electra-base-mrpc: 40.63fps
+GPU.0 FP16 electra-base-qqp: 40.81fps
+GPU.0 FP16 electra-base-sst2: 40.87fps
+GPU.0 FP16 GNMT: no model file
+GPU.0 FP16 GPT-2: no model file
+GPU.0 FP16 mobilebert: 18.71fps
+GPU.0 FP16 roberta-base-cola: 41.25fps
+GPU.0 FP16 roberta-base-mrpc: 39.79fps
+GPU.0 FP16 roberta-base-sst2: 39.69fps
+GPU.0 FP16 sbert-base-mean-tokens: 41.06fps
+GPU.0 FP16 tinybert_6layer_768dim_cola: 78.08fps
+GPU.0 FP16 xlnetx: no model file
+
+GPU.0 FP32 bert-base-ner: 27.05fps
+GPU.0 FP32 bert-base-uncased-cola: 26.81fps
+GPU.0 FP32 bert-base-uncased-mrpc: 26.94fps
+GPU.0 FP32 bert-base-uncased-qqp: 26.96fps
+GPU.0 FP32 bert-base-uncased-sst2: 26.84fps
+GPU.0 FP32 bert-large-uncased-whole-word-masking-squad-0001: 2.64fps
+GPU.0 FP32 bert-large-uncased-whole-word-masking-squad-emb-0001: 16.71fps
+GPU.0 FP32 bert-small-uncased-whole-word-masking-squad-0002: 23.18fps
+GPU.0 FP32 bert-small-uncased-whole-word-masking-squad-emb-int8-0001: 134.15fps
+GPU.0 FP32 bert-small-uncased-whole-word-masking-squad-int8-0002: 33.15fps
+GPU.0 FP32 distilbert-base-uncased-cola: 43.69fps
+GPU.0 FP32 distilbert-base-uncased-mrpc: 43.81fps
+GPU.0 FP32 electra-base-cola: 26.75fps
+GPU.0 FP32 electra-base-mrpc: 26.92fps
+GPU.0 FP32 electra-base-qqp: 26.90fps
+GPU.0 FP32 electra-base-sst2: 27.04fps
+GPU.0 FP32 GNMT: no model file
+GPU.0 FP32 GPT-2: no model file
+GPU.0 FP32 mobilebert: 18.02fps
+GPU.0 FP32 roberta-base-cola: 27.06fps
+GPU.0 FP32 roberta-base-mrpc: 26.40fps
+GPU.0 FP32 roberta-base-sst2: 26.47fps
+GPU.0 FP32 sbert-base-mean-tokens: 26.85fps
+GPU.0 FP32 tinybert_6layer_768dim_cola: 52.97fps
+GPU.0 FP32 xlnetx: no model file
+
+GPU.0 INT8 bert-base-ner: no model file
+GPU.0 INT8 bert-base-uncased-cola: no model file
+GPU.0 INT8 bert-base-uncased-mrpc: no model file
+GPU.0 INT8 bert-base-uncased-qqp: no model file
+GPU.0 INT8 bert-base-uncased-sst2: no model file
+GPU.0 INT8 bert-large-uncased-whole-word-masking-squad-0001: 4.02fps
+GPU.0 INT8 bert-large-uncased-whole-word-masking-squad-emb-0001: no model file
+GPU.0 INT8 bert-small-uncased-whole-word-masking-squad-0002: no model file
+GPU.0 INT8 bert-small-uncased-whole-word-masking-squad-emb-int8-0001: no model file
+GPU.0 INT8 bert-small-uncased-whole-word-masking-squad-int8-0002: no model file
+GPU.0 INT8 distilbert-base-uncased-cola: no model file
+GPU.0 INT8 distilbert-base-uncased-mrpc: no model file
+GPU.0 INT8 electra-base-cola: no model file
+GPU.0 INT8 electra-base-mrpc: no model file
+GPU.0 INT8 electra-base-qqp: no model file
+GPU.0 INT8 electra-base-sst2: no model file
+GPU.0 INT8 GNMT: no model file
+GPU.0 INT8 GPT-2: no model file
+GPU.0 INT8 mobilebert: no model file
+GPU.0 INT8 roberta-base-cola: no model file
+GPU.0 INT8 roberta-base-mrpc: 38.77fps
+GPU.0 INT8 roberta-base-sst2: no model file
+GPU.0 INT8 sbert-base-mean-tokens: no model file
+GPU.0 INT8 tinybert_6layer_768dim_cola: no model file
+GPU.0 INT8 xlnetx: no model file
+
+GPU.1 FP16 bert-base-ner: 341.02fps
+GPU.1 FP16 bert-base-uncased-cola: 343.36fps
+GPU.1 FP16 bert-base-uncased-mrpc: 339.98fps
+GPU.1 FP16 bert-base-uncased-qqp: 339.27fps
+GPU.1 FP16 bert-base-uncased-sst2: 340.05fps
+GPU.1 FP16 bert-large-uncased-whole-word-masking-squad-0001: failed
+GPU.1 FP16 bert-large-uncased-whole-word-masking-squad-emb-0001: failed
+GPU.1 FP16 bert-small-uncased-whole-word-masking-squad-0002: failed
+GPU.1 FP16 bert-small-uncased-whole-word-masking-squad-emb-int8-0001: failed
+GPU.1 FP16 bert-small-uncased-whole-word-masking-squad-int8-0002: failed
+GPU.1 FP16 distilbert-base-uncased-cola: failed
+GPU.1 FP16 distilbert-base-uncased-mrpc: failed
+GPU.1 FP16 electra-base-cola: 343.18fps
+GPU.1 FP16 electra-base-mrpc: 344.11fps
+GPU.1 FP16 electra-base-qqp: 342.66fps
+GPU.1 FP16 electra-base-sst2: 343.58fps
+GPU.1 FP16 GNMT: no model file
+GPU.1 FP16 GPT-2: no model file
+GPU.1 FP16 mobilebert: failed
+GPU.1 FP16 roberta-base-cola: 342.78fps
+GPU.1 FP16 roberta-base-mrpc: 350.02fps
+GPU.1 FP16 roberta-base-sst2: 351.53fps
+GPU.1 FP16 sbert-base-mean-tokens: failed
+GPU.1 FP16 tinybert_6layer_768dim_cola: 543.19fps
+GPU.1 FP16 xlnetx: no model file
+
+GPU.1 FP32 bert-base-ner: 275.21fps
+GPU.1 FP32 bert-base-uncased-cola: 270.15fps
+GPU.1 FP32 bert-base-uncased-mrpc: 266.11fps
+GPU.1 FP32 bert-base-uncased-qqp: 272.46fps
+GPU.1 FP32 bert-base-uncased-sst2: 267.84fps
+GPU.1 FP32 bert-large-uncased-whole-word-masking-squad-0001: failed
+GPU.1 FP32 bert-large-uncased-whole-word-masking-squad-emb-0001: failed
+GPU.1 FP32 bert-small-uncased-whole-word-masking-squad-0002: failed
+GPU.1 FP32 bert-small-uncased-whole-word-masking-squad-emb-int8-0001: failed
+GPU.1 FP32 bert-small-uncased-whole-word-masking-squad-int8-0002: failed
+GPU.1 FP32 distilbert-base-uncased-cola: failed
+GPU.1 FP32 distilbert-base-uncased-mrpc: failed
+GPU.1 FP32 electra-base-cola: 270.14fps
+GPU.1 FP32 electra-base-mrpc: 274.23fps
+GPU.1 FP32 electra-base-qqp: 270.39fps
+GPU.1 FP32 electra-base-sst2: 274.27fps
+GPU.1 FP32 GNMT: no model file
+GPU.1 FP32 GPT-2: no model file
+GPU.1 FP32 mobilebert: failed
+GPU.1 FP32 roberta-base-cola: 273.92fps
+GPU.1 FP32 roberta-base-mrpc: 275.91fps
+GPU.1 FP32 roberta-base-sst2: 272.85fps
+GPU.1 FP32 sbert-base-mean-tokens: failed
+GPU.1 FP32 tinybert_6layer_768dim_cola: 463.16fps
+GPU.1 FP32 xlnetx: no model file
+
+GPU.1 INT8 bert-base-ner: no model file
+GPU.1 INT8 bert-base-uncased-cola: no model file
+GPU.1 INT8 bert-base-uncased-mrpc: no model file
+GPU.1 INT8 bert-base-uncased-qqp: no model file
+GPU.1 INT8 bert-base-uncased-sst2: no model file
+GPU.1 INT8 bert-large-uncased-whole-word-masking-squad-0001: failed
+GPU.1 INT8 bert-large-uncased-whole-word-masking-squad-emb-0001: no model file
+GPU.1 INT8 bert-small-uncased-whole-word-masking-squad-0002: no model file
+GPU.1 INT8 bert-small-uncased-whole-word-masking-squad-emb-int8-0001: no model file
+GPU.1 INT8 bert-small-uncased-whole-word-masking-squad-int8-0002: no model file
+GPU.1 INT8 distilbert-base-uncased-cola: no model file
+GPU.1 INT8 distilbert-base-uncased-mrpc: no model file
+GPU.1 INT8 electra-base-cola: no model file
+GPU.1 INT8 electra-base-mrpc: no model file
+GPU.1 INT8 electra-base-qqp: no model file
+GPU.1 INT8 electra-base-sst2: no model file
+GPU.1 INT8 GNMT: no model file
+GPU.1 INT8 GPT-2: no model file
+GPU.1 INT8 mobilebert: no model file
+GPU.1 INT8 roberta-base-cola: no model file
+GPU.1 INT8 roberta-base-mrpc: failed
+GPU.1 INT8 roberta-base-sst2: no model file
+GPU.1 INT8 sbert-base-mean-tokens: no model file
+GPU.1 INT8 tinybert_6layer_768dim_cola: no model file
+GPU.1 INT8 xlnetx: no model file
+
