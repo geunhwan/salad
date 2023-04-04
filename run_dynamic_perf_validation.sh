@@ -1,7 +1,8 @@
 #!/bin/bash
 
 openvino_path="/home/geunhwan/work/repo/openvino/bin/intel64/RelWithDebInfo"
-model_path="/home/geunhwan/work/val_model/23ww08_dynamic_23.0.0-9729-c62be51cc1e-API2.0"
+#model_path="/home/geunhwan/work/val_model/23ww08_dynamic_23.0.0-9729-c62be51cc1e-API2.0"
+model_path="/home/geunhwan/work/val_model/23ww13_dynamic_23.0.0-10239-1b72352f6f2-API2.0"
 result_file="./dynamic_perf_validation/"$(date +%y%m%d_%H%M%S)
 
 models=(\
