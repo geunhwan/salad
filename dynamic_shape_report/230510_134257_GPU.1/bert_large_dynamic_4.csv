@@ -1,0 +1,38 @@
+Command line parameters;
+cache_dir;./_cache;
+d;GPU.1;
+data_shape;input_ids[1,?],attention_mask[1,?],token_type_ids[1,?];
+hint;none;
+m;/home/geunhwan/work/model/bert-large-uncased-whole-word-masking-squad-0001/onnx/onnx/FP16/1/dldt/bert-large-uncased-whole-word-masking-squad-0001.xml;
+niter;100;
+nstreams;4;
+report_folder;.;
+report_type;no_counters;
+shape;input_ids[1,?],attention_mask[1,?],token_type_ids[1,?];
+
+Configuration setup;
+benchmark mode;full;
+topology;torch-jit-export;
+target device;GPU.1;
+API;async;
+precision;undefined;
+batch size;1;
+number of iterations;100;
+number of parallel infer requests;4;
+duration (ms);0;
+number of GPU.1 streams;4;
+
+Execution results;
+read model time (ms);26.301416;
+reshape model time (ms);10.450642;
+compile model time (ms);1423.707647;
+first inference time (ms);74.584172;
+total execution time (ms);1606.800419;
+total number of iterations;100;
+Median latency (ms);47.995077;
+Percentile boundary;50;
+Average latency (ms);63.018857;
+Min latency (ms);29.058132;
+Max latency (ms);336.982961;
+throughput;62.235483;
+

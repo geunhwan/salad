@@ -1,0 +1,37 @@
+Command line parameters;
+cache_dir;./_cache;
+d;GPU.1;
+hint;none;
+m;/home/geunhwan/work/model/bert-base-uncased/onnx/onnx/FP16/1/dldt/bert-base-uncased.xml;
+niter;10833;
+nstreams;4;
+report_folder;.;
+report_type;no_counters;
+shape;input_ids[1,384],attention_mask[1,384],token_type_ids[1,384];
+
+Configuration setup;
+benchmark mode;inference only;
+topology;torch-jit-export;
+target device;GPU.1;
+API;async;
+precision;undefined;
+batch size;1;
+number of iterations;10836;
+number of parallel infer requests;4;
+duration (ms);0;
+number of GPU.1 streams;4;
+
+Execution results;
+read model time (ms);26.928349;
+reshape model time (ms);3.348630;
+compile model time (ms);1718.325211;
+first inference time (ms);28.266723;
+total execution time (ms);33878.998057;
+total number of iterations;10836;
+Median latency (ms);12.462910;
+Percentile boundary;50;
+Average latency (ms);12.462487;
+Min latency (ms);8.150929;
+Max latency (ms);31.671005;
+throughput;319.844170;
+
