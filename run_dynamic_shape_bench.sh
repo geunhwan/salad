@@ -7,6 +7,7 @@ bert_small_path='/home/geunhwan/work/model/bert-small-uncased-whole-word-masking
 bert_base_path='/home/geunhwan/work/model/bert-base-uncased/onnx/onnx/FP16/1/dldt/bert-base-uncased.xml'
 bert_large_path='/home/geunhwan/work/model/bert-large-uncased-whole-word-masking-squad-0001/onnx/onnx/FP16/1/dldt/bert-large-uncased-whole-word-masking-squad-0001.xml'
 gpu_device='GPU.0'
+num_streams=1
 date=`date +%y%m%d_%H%M%S`
 
 usage() {
@@ -14,6 +15,7 @@ usage() {
     echo ""
     echo "OPENVINO_PATH: $openvino_path"
     echo "GPU_DEVICE: $gpu_device"
+    echo "NUM_STREAMS: $num_streams"
     echo "BERT_SMALL_PATH: $bert_small_path"
     echo "BERT_BASE_PATH: $bert_base_path"
     echo "BERT_LARGE_PATH: $bert_large_path"
@@ -45,6 +47,10 @@ if [[ ! -z "$GPU_DEVICE" ]]; then
     gpu_device=$GPU_DEVICE
 fi
 
+if [[ ! -z "$NUM_STREAMS" ]]; then
+    num_streams=$NUM_STREAMS
+fi
+
 if [[ ! -z "$BERT_SMALL_PATH" ]]; then
     bert_small_path = $BERT_SMALL_PATH
 fi
@@ -67,7 +73,7 @@ run_model() {
     ### run static performance total processing time ###
     rm -rf $cache_path/*
 
-    $openvino_path/benchmark_app -d $gpu_device -niter 10833 -m $model_path -shape input_ids[1,384],attention_mask[1,384],token_type_ids[1,384] -hint none -nstreams 1 -nireq 1 -cache_dir $cache_path -report_type no_counters -report_folder .
+    $openvino_path/benchmark_app -d $gpu_device -niter 10833 -m $model_path -shape input_ids[1,384],attention_mask[1,384],token_type_ids[1,384] -hint none -nstreams $num_streams -cache_dir $cache_path -report_type no_counters -report_folder .
     if [[ -f ./benchmark_report.csv ]]; then
         mv ./benchmark_report.csv ${report_path}/${model_name}_static.csv
     else
@@ -77,7 +83,7 @@ run_model() {
     ### run dynamic performance total processing time ###
     rm -rf $cache_path/*
 
-    $openvino_path/benchmark_app -d $gpu_device -niter 10833 -m $model_path -shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -data_shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -hint none -nstreams 1 -nireq 1 -cache_dir $cache_path -report_type no_counters -report_folder .
+    $openvino_path/benchmark_app -d $gpu_device -niter 10833 -m $model_path -shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -data_shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -hint none -nstreams $num_streams -cache_dir $cache_path -report_type no_counters -report_folder .
     if [[ -f ./benchmark_report.csv ]]; then
         mv ./benchmark_report.csv ${report_path}/${model_name}_dynamic.csv
     else
@@ -88,7 +94,7 @@ run_model() {
     rm -rf $cache_path/*
 
     for ((iter=0; iter<10; iter++)); do
-        $openvino_path/benchmark_app -d $gpu_device -niter 100 -m $model_path -shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -data_shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -hint none -nstreams 1 -nireq 1 -cache_dir $cache_path -report_type no_counters -report_folder .
+        $openvino_path/benchmark_app -d $gpu_device -niter 100 -m $model_path -shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -data_shape input_ids[1,?],attention_mask[1,?],token_type_ids[1,?] -hint none -nstreams $num_streams -cache_dir $cache_path -report_type no_counters -report_folder .
         if [[ -f ./benchmark_report.csv ]]; then
             mv ./benchmark_report.csv ${report_path}/${model_name}_dynamic_${iter}.csv
         else
