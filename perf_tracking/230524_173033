@@ -1,0 +1,26 @@
+swin transformer b1   : 308.14fps, 25.86ms
+twins transformer b1  : 402.34fps, 19.67ms
+vision transformer b1 : 439.76fps, 18.11ms
+stylegan2 b1          : 28.79fps, 275.88ms
+bert-large b1         : 95.53fps, 83.33ms
+bert-large b16        : 153.39fps, 834.21ms
+bert-base b1          : 676.28fps, 11.64ms
+bert-base b128        : 1900.99fps, 542.48ms
+albert b1             : 591.96fps, 13.27ms
+yolov5m b1            : 421.65fps, 18.91ms
+yolov5m b8            : 538.89fps, 118.66ms
+yolov8s b1            : 753.02fps, 10.57ms
+yolov8s b16           : 1373.97fps, 93.02ms
+yolov8m b1            : 306.69fps, 26.04ms
+yolov8m b16           : 606.49fps, 210.08ms
+dbnet b1              : 88.57fps, 90.30ms
+sd-1.4                : 21.03fps, 95.06ms
+sd-1.5 int8           : 19.81fps, 100.89ms
+sd-2.1                : 8.77fps, 227.94ms
+sam_encoder           : 14.28fps, 69.97ms
+sam_encoder int8      : 11.19fps, 89.34ms
+sam_predictor         : 348.77fps, 2.82ms
+sam_predictor int8    : 318.19fps, 3.09ms
+sd-1.4 igpu           : 0.18fps, 11377.11ms
+sd-1.5 int8 igpu      : 1.19fps, 1679.81ms
+sd-2.1 igpu           : 0.27fps, 7390.45ms

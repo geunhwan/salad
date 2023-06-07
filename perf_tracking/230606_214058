@@ -1,0 +1,33 @@
+/home/geunhwan/work/repo/openvino/bin/intel64/RelWithDebInfo
+94597d8391112cfba069b12605ebad69292606d2 [DOCS] Port release doc fixes to master (#17901)
+swin transformer b1       : 326.10fps, 24.47ms
+twins transformer b1      : 421.82fps, 19.12ms
+vision transformer b1     : 449.76fps, 17.69ms
+stylegan2 b1              : 28.76fps, 277.06ms
+bert-large b1             : 103.48fps, 77.07ms
+bert-large b16            : 156.74fps, 822.87ms
+bert-base b1              : 685.57fps, 11.70ms
+bert-base b128            : 1884.46fps, 543.37ms
+albert b1                 : 590.05fps, 13.49ms
+resnet-50 b256            : 6337.94fps, 324.68ms
+yolov5m b1                : 429.99fps, 18.54ms
+yolov5m b8                : 541.91fps, 117.88ms
+yolov7 b1                 : 287.35fps, 27.75ms
+yolov7 b32                : 504.89fps, 506.91ms
+yolov8s b1                : 772.88fps, 10.31ms
+yolov8s b16               : 1368.14fps, 93.48ms
+yolov8m b1                : 310.80fps, 25.69ms
+yolov8m b16               : 610.31fps, 209.10ms
+dbnet b1                  : 88.53fps, 90.26ms
+sd-1.4                    : 21.76fps, 91.85ms
+sd-1.4 igpu               : 0.18fps, 11365.40ms
+sd-1.5 int8               : 20.60fps, 97.02ms
+sd-1.5 int8 igpu          : 1.16fps, 1724.95ms
+sd-2.1                    : 8.82fps, 226.75ms
+sd-2.1 igpu               : 0.27fps, 7391.68ms
+sam_encoder               : 14.37fps, 69.54ms
+sam_encoder int8          : 11.24fps, 88.86ms
+sam_predictor             : 373.10fps, 2.63ms
+sam_predictor int8        : 350.44fps, 2.80ms
+whisper tiny decoder      : 91.95fps, 86.00ms
+whisper tiny decoder igpu : 53.44fps, 73.41ms
